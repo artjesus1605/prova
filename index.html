@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>judas contabilidade</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	</head>
+	<body>
+
+		<header>
+			<div class="container">
+				<h2 class="titulo">judas contabilidade</h2>
+			</div>
+		</header>
+		<main>
+			<section class="container">
+				<h2>Tarefas</h2>
+				
+				<table>
+					
+							
+					<tbody id="tabela-tarefas">
+						
+							<td class="info-tarefa">Nome da tarefa</td>
+							<td class="info-inicio">Data de Início</td>
+							<td class="info-conclusão">Data de conclusão</td>
+							<td class="info-resposavel">Nome do responsável</td>
+                            <td class="status">Status</td>
+                            <td class="editar" >Editar</td>
+					</tbody>
+				</table>
+				
+
+				
+				<section class="visu" id="visu">
+                    <div class="qtdprodutos">
+                        <h2 class="subtitulo">Total de tarefas</h2>
+                        <h3 class="total" id="total">0</h3>
+                        
+                </section>
+				
+				
+
+			</section>
+		</main>
+
+		<section class="container">
+		    <h2 id="titulo-form">Adicionar nova tarefa</h2>
+			<ul id="mensagens-erro"></ul>
+		    <form id="form-adiciona">
+		        <div class="">
+		            <label for="tarefa">tarefa:</label>
+		            <input id="terefa" name="tarefa" type="text" placeholder="digite o nome da sua tarefa" class="campo">
+		        </div>
+		        <div class="form-group">
+		            <label for="data">Data de início:</label>
+		            <input id="data_in" name="data_in" type="month" placeholder="digite a data de inicio" class="form-control" min="2023-04" max="2023-05">
+		        </div>
+		        <div class="form-group">
+		            <label for="data_cl">Data de conclusão</label>
+		            <input id="data_cl" name="data_cl" type="month" placeholder="digite a hora da consulta" class="form-control" min="2023-05" max="2023-07">
+		        
+				<div class="form-group">
+		            <label for="medico">Responsável:</label>
+		            <select class="form-control" id="responsavel" name="responsavel">
+						<option value="" disabled>Selecione um responsável</option>
+						<option value="João">João</option>
+						<option value="Maria">Maria</option>
+						<option value="José">José</option>
+					</select>
+		        </div>
+                <div class="form-group">
+                    <label for="status">Status</label>
+                    <select class="form-control" name="status" id="status">
+                        <option value="" disabled>Status</option>
+                        <option value="Completo">Completo</option>
+                        <option value="Em andamento">Em andamento</option>
+                    </select>
+                </div>
+
+		        <button id="adicionar-tarefa" class="botao bto-principal">Adicionar</button>
+		    </form>
+		</section>
+
+		<script src="js/form.js"></script>
+		<script src="js/remover.js"></script>
+		
+
+
+	</body>
+</html>
