@@ -1,0 +1,1 @@
+Seu HTML e CSS está correto, sua estilização esta ok e suas funcionalidades estão ok, sua estrutura de pastas está incompleta e seu css está igual ao projeto feito em sala. Com isso você atingiu o nivel 5 e sua nota é 6,5
